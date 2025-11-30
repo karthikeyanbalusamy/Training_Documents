@@ -1,0 +1,415 @@
+MLOps: Edu 
+
+Start Date: 29th Nov. 2025
+8:30PM-11:30PM IST - SAT-SUN
+
+####################
+Day1: 29th Nov. 2025
+####################
+
+	- MLOps Introduction :::
+	
+		Github Account :
+		
+			https://github.com/
+			
+			
+	- What is DevOps ???
+	
+	SDLC : Software Development Life Cycle :
+	
+		- Requirement Analysis 
+	
+		- Designg & Document 
+		
+		- Code & Development 
+		
+		- Testing 
+		
+		- Implement to Prod
+		
+		- Monitor/Maintain 
+		
+		
+	- Waterfall: 
+		- It is Linear in fashion.
+		- It strictly follows Top-Down Approach
+	
+		- Requirement Analysis 
+	
+		- Designg & Document 
+		
+		- Code & Development 
+		
+		- Testing 
+		
+		- Implement to Prod
+		
+		- Monitor/Maintain 	
+		
+		
+	Software Applications :
+	
+		- Desktop Applications
+		- Web Applications
+		- Mobile Applications
+		- Embedded Applications
+	
+	
+			
+		- Desktop Applications	:::
+			
+			SuperMarket Billing System:
+					--> Functions/Modules 
+							- User Interface Design 
+							- Inventory Mgmt 
+							- Billing Mgmt
+							- Supplier Mgmt 
+							- Payment Mgmt 
+								- Cash Payment 
+								- Card Payment
+							
+										- Online Payment
+										- UPI Payment 
+							
+					
+	Core Project :
+	
+		- Requirement Analysis 		--> 12 Months 
+	
+		- Designg & Document 
+		
+		- Code & Development 		--> 6th Month 
+		
+		- Testing 
+		
+		- Implement to Prod
+		
+		- Monitor/Maintain
+
+
+	Enhancement Project :
+	
+		- Requirement Analysis 		
+	
+		- Designg & Document 
+		
+		- Code & Development 		
+		
+		- Testing 
+		
+		- Implement to Prod
+		
+		- Monitor/Maintain
+		
+		
+	AGILE Methodologies :::
+	
+		- Desktop Applications	:::
+			
+			SuperMarket Billing System:
+					--> Functions/Modules --> iterations  
+							- User Interface Design 
+							- Inventory Mgmt 
+							- Billing Mgmt
+							- Supplier Mgmt 
+							- Payment Mgmt 
+								- Cash Payment 
+								- Card Payment		
+
+							
+										- Online Payment
+										- UPI Payment 
+										
+	Iteration 1 : User Interface Design 
+	
+		- Requirement Analysis 		
+	
+		- Designg & Document 
+		
+		- Code & Development 		
+		
+		- Testing 
+		
+		- Implement to Prod with proper manual approvals
+		
+		- Monitor/Maintain
+		
+		
+	Iteration 2 : Inventory Mgmt
+	
+		- Requirement Analysis 		
+	
+		- Designg & Document 
+		
+		- Code & Development 		
+		
+		- Testing 
+		
+		- Implement to Prod with proper manual approvals
+		
+		- Monitor/Maintain
+		
+
+	nth Iteration : Online Payment
+	
+		- Requirement Analysis 		
+	
+		- Designg & Document 
+		
+		- Code & Development 		
+		
+		- Testing 
+		
+		- Implement to Prod with proper manual approvals
+		
+		- Monitor/Maintain
+		
+		
+	Using AGILE Methodologies:
+	
+	 - We can Achieve :
+	 
+		- Continuous Development
+		- Continuous Integration 
+		- Continuous Testing 
+		- Continuous Delivery
+			- Used to perform Production release with manual approvals.
+		
+	 - We cannot Achieve :
+	 
+		- Continuous Deployment 	
+			- Used to perform Production release without any manual approvals.
+			
+			
+	- What is DevOps ???
+	
+	- DevOps :::::
+	
+		DevOps is a Software Development Strategy, which helps to promote the collaboration between the teams like Development Team and Operations Team to achieve Continuous Development, Continuous Integration, Continuous Testing, Continuous Delivery, Continuous Deployment and Continuous Monitoring in more Automated Fashion.
+		
+			Continuous Delivery & Deployment:
+			
+				- Both Continuous Delivery & Continuous Deployment are used to release the changes from Non-Prod to Prod.
+				
+				Continuous Delivery:
+				
+					- Continuous Delivery Exepects Manual Approvals
+					- We might experience the Application Down-time
+	
+					Eg: 
+				
+					Banking Domain :
+					
+						Online Banking / Credit Card Transaction
+				
+							Create a Production Release Window:
+								4 - 6Hrs 
+								
+	
+				Continuous Deployment:
+				
+					- Never Exepects Manual Approvals	
+					- Deploy the changes to production without any down-time.
+
+					Eg:
+					
+					- Amazon/Netflix/Facebook/Google ::
+					
+						
+				
+	
+					
+	- How to Implement DevOps :::
+	
+		- Identify the Teams involved in the process of SDLC :
+		
+			- DevOps Team 
+				- Infra-Structure Management Team 
+				- Application Development Team
+				- Testing Team 
+				- Release Management Team 
+				- Production Support Team 
+				- Production Monitoring Team 
+				- IT Security 
+				
+				
+		- Environments :
+		
+			Non-Prod 									Prod Environments
+			
+				Dev Environment
+				
+				Test Environment
+				
+					QA 
+					
+					UAT 			================>		Production Servers - 1,2,3,4,5
+	
+		
+		
+		- Application Architecture :
+		
+			- Monolith Application Architecture:
+			
+				- It Tightly-Coupled Application Architecture
+				- All the dependencies are tightly coupled 
+				- With the we can achieve only Continuous Delivery.
+				- We cannot achieve Continuous Deployment
+			
+			
+			- Micro-Service Based Application Architecture: 
+			
+				- It is Loose-Coupled Application Architecture,
+				- Each and every function is considered as Micro-Service.
+				- With this we can achieve Continuous Deployment.
+				
+				
+	Devops :::
+	
+		- People
+		- Strategy/Process 
+		- Tools
+		
+	
+####################
+Day2: 30th Nov. 2025
+####################		
+	
+	MLOps Lifecycle :
+	
+	MLOps Usecase :
+	
+	Versioning :
+		
+		Version Control System using Git :
+		
+		Git Demo :
+		
+	ML Project and Packaging ML Model 
+	
+	CICD Pipeline:
+	
+		- SCM_Checkout 	==> VCS ?
+		- Application Build
+		- Create Application Artifacts 
+		- Test 
+		- Deploy 
+		
+		
+	How to Implement MLOps :::
+
+	
+		- Data Engineers		-> Prepare the Source Datasets 
+		
+		- Data Scientists 		->  Explore the datasets, analyse, check the feasibility of datasets 
+									Perform the training, tuning, and evaluate the Model
+		
+		- ML Engineers 			-> Deploy the ML Models to prod -> MLOps Strageies CICD, define best practises
+									Should have MLOps Knowledge
+		
+		- Business Stakeholders -> Bring business values using this ML Models 
+		
+		- Data Security/Governance Team  --> To Ensure data security & Governance, data privacy
+		
+		
+	ML Model Use Case :
+	
+		ML Model for Product Reviews :
+		
+		E_Commerce Application Eg. www.amazon.com
+		
+		Product Review:
+		
+		
+	CICD Pipeline:										
+		- SCM_Checkout 	==> VCS ?							 
+		- Application Build
+		- Create Application Artifacts 
+		- Test 
+		- Deploy 		
+		
+
+	Process/Lifecycle of Machine Learning Ops:::
+	
+		- Data Preparation 
+
+		- Exploratory Data Analysis (EDA)
+		
+		- Feature Engineering
+		
+		- Model Training 
+		
+		- Model Validations 
+		
+		- Model Deployment 
+		
+		- Monitoring
+		
+	MLOps Use cases:
+
+
+		- Healthcare 
+		- Finance 
+		- Retail Domain - E_Commerce
+		- Manufacturing 
+		
+		
+		
+	How to Implement MLOps :::
+	
+	- Vesioning:
+	
+	Version Control System :
+	
+		- To Version Control the Changes 
+		- To Track the Changes
+		
+	Types of VCS :
+	
+		- Centralized VCS:
+		
+		- Distributed VCS:
+		
+		GIT :
+		
+			- Git is an Open-Source Distributed VCS 
+			- To Version Control the Changes 
+			- To Track the Changes 
+			- To perform Parallel Development using Branching Techniques
+			
+	
+	
+
+	Lab Requirements:
+	
+		- Create GitHub Account 
+		
+				- https://github.com/
+		
+		- Install Git Client on Local Machine 
+			- Windows OS :
+				- Git Bash
+				- Git CMD 
+				- Git GUI 
+				
+			- Linux/Mac OS : 
+				- Terminal 
+
+
+	Git - Client install on Local Machine 
+	
+	Github - Remote Repository Server
+	
+		
+
+Next :::
+		
+		- Create AWS Free Tier Account 
+		
+		- Create DockerHub Account 
+		
+		- Install Visual Studio Code on Local Machine 
+		
+		- Install Python on Local Machine 
+		
