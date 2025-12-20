@@ -1810,4 +1810,205 @@ Next :
 ML_Model
 	-> ML Artifacts :::		Trained Model 
 
+
+MLOps Project ::::
+
+	- Create an ML Model using 
+	
+		-> Streamlit, Fast-API,
 		
+	1. Simple Web Application :
+	
+	
+	2. Prod Level Application :
+	
+	
+	DevOps / MLOps Team / LLMOps :
+	
+	Roles & Responsibilities ::
+	
+	- Detailed Assessment of the requirement 
+	
+		- Interact with all the ML Teams --> DS,DE, ML Engg, 
+		
+		Tools to be used :
+		
+		MLOps Stack!
+		
+			- Source Code :		Application Source Code - API, UI, Pipeline(Train the Model)
+			
+			- Package 	  :  	Docker & DockerHub 
+			
+			- Artifacts   :		Trained Model --> joblib/pickle - model.pkl  
+			
+			- Depeloyment  :	DockerHub 	# get the Container Images 
+								AWS S3 	  	# get the Model & Data
+								Kubernetes	# To Orchestrate the Containers 
+								Kubernetes Cluster is the Target Environment
+								
+								
+		Kubernetes ::::
+		
+			- It is a Open-Source Container Orchestration Tool 
+			- Kubernetes is used to Deploy any type of Containers.
+			- It is used to ensure high availability of the Applications/services running thru Containers.
+			- Used to Ensure High Availability of Containers by creating Replicas of Containers.
+			- It supports Auto-Scaling & Load Balancing.
+
+			- Self-healing Capability!
+			
+			- Using this we can achieve Continuous Deployment
+
+
+			
+		Kubernetes Architecture :::
+			
+			Architecture Components :::
+
+		- Kubernetes Architecture components :::
+		
+			API_Server 				--> # Acts as an interface to the kubernetes 
+			
+			ETCD 					--> # Single point of Source for Kubernetes Components 
+			
+			Scheduler				--> # To identify the Healthy Node for Deployments
+			
+			Controller Manager 		--> # To run the pods in its desired state 
+			
+			
+			Kubelet 				--> # Is a Kubernetes Agent used to Create & Deploy the Pods
+			
+			KubeProxy				--> # Is used to enable pod networking by create Pod IP Address			
+			
+			CRI - Container RunTime Interface (Container-D)
+									--> # It is used identify the Image from Container Registry for deployment							
+			
+			
+			
+		- Terminologies :::
+		
+			- Container Images :
+				- It is a static file used to define the properties and dependencies of application
+				- These are non-executable 
+				- It is composed of various layers of instruction created using Dockerfile.
+						
+			- Container :
+			
+				- Container is an executable entity of Container Image
+			
+			- Container Registry :
+				- Container Registry is used to Store/Manage the Container Images.
+				- DockerHub is a default Container Registry for Docker Container Engine.
+				https://hub.docker.com/
+				
+				
+			- Container Repository :				Public/Private 
+				- Sub-set of Container Registry 
+				
+				
+
+			- Kubectl 						# It is Command Line Utility to interact with Kubernetes Master 
+			
+			- Kubernetes Cluster 
+											# Is a collection of Worker Nodes. 
+							
+			- Pod 							# Atomic Unit of Scheduling 			
+			
+			- Kubernetes_Master				# Used to Create and Schedule the Deployments to Kubernetes_WorkNodes
+			
+			- Kubernetes_WorkNodes			# Target Servers 
+			
+			
+			--> Deploy 5 Replicas of Pod:
+					==> Can be distibuted to all the available nodes by kubernetes
+					
+			
+	- To Setup the Kubernetes Architecture :::
+
+			Kubernetes_Master 
+				Kubernetes_WorkerNode1
+				Kubernetes_WorkerNode2
+				
+				
+	- Minikube, K3s		# Learning basic kubectl commands 
+						# Single Node Cluster 		
+
+						# https://docs.k3s.io/installation
+						
+						
+		Using K3s :
+		
+			Use AWS Ubuntu - 22.04V AMI 
+			
+			- sudo -i 
+			
+			- apt update -y  
+			
+			- curl -sfL https://get.k3s.io | sh -
+			
+			- sudo systemctl status k3s
+			
+			- kubectl get nodes 
+			
+			- sudo hostnamectl set-hostname "k3s-master-node"
+			
+			- exec bash
+			
+	
+	
+	- Working with Kubernetes Deployment Controller Object :::
+	
+	vi deploy-ui.yaml 			# Used to define the Pods for UI	- Streamlit UI
+	
+	vi nodeport-svc-ui.yaml		# Nodeport is used to expose the pods to internet
+
+
+	vi deploy-api.yaml 			# Used to define the Pods for APIs 	- Fast API 
+			
+	vi nodeport-svc-api.yaml	# Nodeport is used to expose the pods to internet
+	
+
+
+	Create a build server :
+	
+	
+	sudo -i 
+	
+	source venv/bin/activate
+	
+	pip install -r requirements.txt
+	
+	cd Proj_directory 
+	
+	> 
+	
+git init 
+
+dvc init 
+
+dvc remote add -d s3remote s3://edu-loksai-mlproj-bkt1
+
+git add .dvc/config
+
+git commit -m "Configure DVC S3 remote"
+
+vi data/raw/reviews.csv				# Add sample Records			
+
+dvc add data/raw/reviews.csv		# Add data/raw/reviews.csv to git after every dvc add
+
+git add data/raw/reviews.csv.dvc data/raw/.gitignore
+
+git commit -m "Added DVC Data-v1"
+
+dvc repro
+
+
+git add data/processed/.gitignore models/.gitignore dvc.lock			# Add dvc.lock to git after every dvc repro
+
+git commit -m "repro-Processed data-v1"
+
+dvc push 							# Push repro-Processed data 
+
+dvc status							# Status should be: Data and pipelines are up to date.
+	
+			
